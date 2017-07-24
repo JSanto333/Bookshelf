@@ -11,6 +11,8 @@ namespace Bookshelf.Models
     {
         [Key]
         public int ID { get; set; }
+
+        [Display(Name = "Category")]
         public string Name { get; set; }
         //Navigation Property
         public virtual ICollection<Book> Books { get; set; }
